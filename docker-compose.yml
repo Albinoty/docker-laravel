@@ -21,7 +21,7 @@ services:
     ports: 
       - "8383:80" 
     volumes: 
-      - ./code:/code:cached
+      - ./code:/code
       - ./docker/nginx/config/default.conf:/etc/nginx/conf.d/default.conf
     links: 
       - php
